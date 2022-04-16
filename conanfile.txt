@@ -1,0 +1,7 @@
+[requires]
+fmt/8.1.1
+imgui/cci.20220207+1.87.docking
+glfw/3.3.7
+
+[generators]
+cmake
