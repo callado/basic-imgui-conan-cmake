@@ -7,9 +7,10 @@ Any of the [ImGui examples](https://github.com/ocornut/imgui/tree/master/example
 
 ## Building
 
-Make sure you have Conan and CMake installed before starting. Then, from the command-line:
+Make sure you have Conan and CMake installed before starting.
+Clone the repository. Then, from the command-line at the project's root folder:
 
-1. create a build folder and `cd` into it:
+1. Create a build folder and `cd` into it:
 ```bash
   $ mkdir build && cd build 
 ```
