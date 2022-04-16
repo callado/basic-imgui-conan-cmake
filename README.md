@@ -1,4 +1,4 @@
-# learnopengl.com tutorial - using Dear ImGui, Conan and CMake
+# Basic Dear ImGui, Conan and CMake setup
 
 This project contains a basic setup for an OpenGL scene, using [Dear ImGui](https://github.com/ocornut/imgui) with GLFW3 to create windows and the UI, [Conan](https://conan.io) as a package manager and [CMake](https://cmake.org/) as build system.
 
