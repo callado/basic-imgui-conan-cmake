@@ -13,6 +13,6 @@ PRIVATE
   fmtd
 )
 
-# message("conan libs: " "${CONAN_LIBS}")
+message("conan libs: " "${CONAN_LIBS}")
 
 set_target_properties(${exe_name} PROPERTIES LINK_FLAGS "/ignore:4099")
