@@ -14,7 +14,7 @@ static void glfw_error_callback(int error, const char* description) {
 }
 
 int main(int argc, char* argv[]) {
-  fmt::print("Hello3!\n");
+  fmt::print("Hello5!\n");
 
   // Setup window
   glfwSetErrorCallback(glfw_error_callback);

@@ -6,7 +6,7 @@ add_executable(${exe_name} main.cpp)
 # find_package(glfw REQUIRED)
 
 
-conan_target_link_libraries(${exe_name} 
+target_link_libraries(${exe_name} 
 PUBLIC 
   imgui_backend
 PRIVATE
