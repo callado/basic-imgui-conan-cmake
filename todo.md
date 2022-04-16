@@ -1,1 +1,1 @@
-[] incorporate different build configs and options in CMakeLists.txt
+[ ] incorporate different build configs and options in CMakeLists.txt
