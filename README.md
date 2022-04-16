@@ -1,10 +1,14 @@
-# learnopengl.com tutorial - using Dear ImGui, Conan and CMake
+# Basic Dear ImGui, Conan and CMake setup
 
-This project contains a basic setup for an OpenGL scene, using [Dear ImGui](https://github.com/ocornut/imgui) with GLFW3 to create windows and the UI, [Conan](https://conan.io) as a package manager and [CMake](https://cmake.org/) as build system.
+This project contains a basic setup for a C++20 application using [Dear ImGui](https://github.com/ocornut/imgui) to create the user interface, [Conan](https://conan.io) as a package manager and [CMake](https://cmake.org/) as build system.
+
+The source code itself is simply the ImGui example using GLFW and OpenGL, available at https://github.com/ocornut/imgui/tree/master/examples/example_glfw_opengl3.
+Any of the [ImGui examples](https://github.com/ocornut/imgui/tree/master/examples) with different configurations can be substituted in the `sources/imgui` folder. Just remember to change the `CMakeLists.txt` and `conanfile.txt` accordingly.
 
 ## Building
 
-Make sure you have Conan and CMake installed. From the command-line:
+Make sure you have Conan and CMake installed before starting. Then, from the command-line:
+
 1. create a build folder and `cd` into it:
 ```bash
   $ mkdir build && cd build 
