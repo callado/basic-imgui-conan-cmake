@@ -10,16 +10,9 @@ target_link_libraries(${exe_name}
 PUBLIC 
   imgui_backend
 PRIVATE
-  ${CONAN_LIBS}
+  fmtd
 )
 
-# message("conanlibs: " "${CONAN_LIBS}")
-# target_link_libraries(${exe_name} )
-
-# conan_target_link_libraries(${exe_name}
-# PUBLIC 
-#   imgui_backend
-# PRIVATE
-#   fmt::fmt)
+# message("conan libs: " "${CONAN_LIBS}")
 
 set_target_properties(${exe_name} PROPERTIES LINK_FLAGS "/ignore:4099")

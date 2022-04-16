@@ -4,6 +4,6 @@ add_library(imgui_backend
 
 target_include_directories(imgui_backend PUBLIC include)
 
-conan_target_link_libraries(imgui_backend PUBLIC
-  imgui::imgui 
-  glfw::glfw)
+target_link_libraries(imgui_backend PUBLIC
+  imgui
+  glfw3)
