@@ -4,7 +4,10 @@ add_library(imgui_backend
 
 target_include_directories(imgui_backend PUBLIC include)
 
-target_link_libraries(imgui_backend PUBLIC
-  imgui
-  glfw3
-  opengl32)
+set(imgui_libs "imgui" "glfw3")
+if(WIN32)
+  list(APPEND imgui_libs "opengl32")
+  elseif(UNIX AND NOT APPLE)
+    list(APPEND imgui_libs "GL" "X11" "dl" "pthread" "Xi" "Xrandr")
+endif() 
+target_link_libraries(imgui_backend PUBLIC ${imgui_libs})
